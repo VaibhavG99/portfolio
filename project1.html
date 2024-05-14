@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <style>
+        /* CSS Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background GIF */
+        body {
+            background-image: url('background.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1; /* Set opacity of background GIF */
+        }
+
+        /* Profile section */
+        .profile {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Projects section */
+        .projects {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            width: 60%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: white;
+            opacity: 0.9;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .project:hover{
+            width : 70%;
+            cursor: pointer;
+            transition: 1s;
+
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project h3 {
+            margin: 10px 0;
+        }
+
+        .project p {
+            color: #555;
+        }
+        /* Video background styling */
+        #video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Make sure the video covers the entire screen */
+            z-index: -1; /* Push the video behind other elements */
+            opacity: 1;
+        }
+        a:hover{
+            border-bottom: 2px solid black;
+            color: rgb(128, 126, 126);
+            text-decoration: underline;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+        <!-- Video background -->
+        <video id="video-bg" src="https://cdnl.iconscout.com/lottie/premium/preview-watermark/data-analysis-system-10104410-8265733.mp4" autoplay loop muted></video> <!-- Replace with your online video link -->
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <h1>Coffee Shop Sales Analysis Project</h1>
+        <h2>M.S. Excel | Power Query </h2>
+    </div>
+    <!-- Projects Section -->
+    <div class="projects">
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="dashboard.png" alt="Project 1">
+            <h4>Data Dashboard in M.S.Excel</h4>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="Pivot tables.png" alt="Project 2">
+            <h4>Pivot tables in M.S.Excel</h4>
+        </div>
+        <!-- Project 3 -->
+        <div class="project">
+            <a href="https://docs.google.com/spreadsheets/d/1CUzd5tablACfSmCO9TahB_djs9Y-cwsK/edit?usp=drive_web&ouid=117214190195987149579&rtpof=true" target="_blank"><h2>Complete Excel File</h2></a>
+            <a href="https://drive.google.com/file/d/1R-jaNISO954r6DEW4OJ3fHQaOgKOfkcf/view?usp=sharing" target="_blank"><h2>Data Insights Report</h2></a>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+
+
+    </div>
+</body>
+
+</html>
